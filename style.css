@@ -1,0 +1,262 @@
+/* style.css */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  overflow-x: hidden;
+}
+.navbar-brand {
+  font-weight: 600;
+  color: #222 !important;
+}
+.nav-link {
+  font-weight: 500;
+  color: #222 !important;
+  margin: 0 5px;
+}
+.hero-section {
+  position: relative;
+  padding: 60px 0;
+}
+.hero-content {
+  z-index: 2;
+  position: relative;
+}
+.card {
+  background-color: #fafafa;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 650px;   
+  height: auto;
+  border: 0; 
+}
+
+/* fond jaune */
+.bg-yellow {
+  position: absolute;
+  top: 0;
+  left: 0;       /* bien collé */
+  width: 100%;   /* prend toute la largeur */
+  height: auto;
+}
+
+
+
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 4px;
+    background-color: #ffc107;
+  }
+
+  .project-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 50px;
+  }
+  .project-card img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+  }
+  .project-content {
+    padding: 30px;
+    width: 50%;
+  }
+  .project-content h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  .project-content p {
+    color: #777;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+  }
+  
+  .btn-custom {
+    background-color: #ffc107;
+    border: none;
+    color: #222;
+    font-weight: 600;
+    padding: 8px 24px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+  }
+  .btn-custom:hover {
+    background-color: #e0a800;
+    color: #fff;
+  }
+  .btn-outline-custom {
+    border: 2px solid #222;
+    color: #222;
+    font-weight: 600;
+    padding: 8px 24px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+  }
+  .btn-outline-custom:hover {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  .form-label {
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .footer-section {
+    position: relative;
+    background-color: #fafafa;
+    padding: 80px 0 50px;
+    text-align: center;
+    padding-bottom: 0%;
+  }
+  .social-icons a {
+    font-size: 2rem;
+    color: #222;
+    margin: 0 15px;
+    transition: color 0.3s;
+  }
+  .social-icons a:hover {
+    color: #ffc107;
+    
+  }
+  .footer-text {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .yellow-wave {
+    background-image: url('./img/Vector.png');
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+    
+  }
+  
+  /* About Me Section */
+.about-section {
+  background: #fafafa;
+  padding: 5%;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  font-family: 'Nunito', 'Segoe UI', Arial, sans-serif;
+}
+
+.about-desc {
+  color: #6c757d;
+  font-size: 1.1rem;
+}
+
+.about-img-wrapper {
+  width: 280px;
+  height: 280px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-yellow-circle {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  background: #ffc107;
+  border-radius: 50%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.about-img {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  position: relative;
+  z-index: 2;
+  border: 8px solid #fff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .hero-image {
+      max-width: 100%;
+      margin-top: 30px;
+      border-radius: 100px 100px 0 0;
+    }
+    .project-card {
+      flex-direction: column;
+    }
+    .project-card img,
+    .project-content {
+      width: 100%;
+    }
+    .project-content {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .section-title {
+      font-size: 2rem;
+    }
+    .btn-custom,
+    .btn-outline-custom {
+      padding: 6px 20px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 991.98px) {
+  .about-img-wrapper {
+    margin: 0 auto 32px auto;
+  }
+  .about-section .row {
+    text-align: center;
+  }
+}

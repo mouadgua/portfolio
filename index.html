@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mouad Guarraz - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <img src="./img/pp2.png" class="bg-yellow" alt="Fond jaune décoratif">
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Mouad Guarraz</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link btn btn-primary btn-custom" href="./img/CV.pdf" target="_blank">Mon CV</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero-section container">
+  <div class="row align-items-center">
+    <div class="col-lg-6 hero-content">
+      <h6 class="text-warning mb-2">UI/UX DESIGNER</h6>
+      <h1 class="display-4 fw-bold mb-3" style="font-family: 'Playfair Display', serif;">Hello, my name is <br> <span>Mouad Guarraz</span></h1>
+      <p class="lead text-muted mb-4">
+        Prêt à mettre mes compétences à votre service.
+      </p>
+      <div class="d-flex gap-2">
+        <a href="#projects" class="btn btn-custom">Projets</a>
+        <a href="https://www.linkedin.com/in/mouad-guarraz-a46174360/" class="btn btn-outline-custom" target="_blank" type="button">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="container my-5">
+  <h2 class="section-title">Projets</h2>
+
+  <div class="project-card">
+    <div class="project-content">
+      <h3 style="font-family: 'Playfair Display', sans-serif;">Projets Javascript</h3>
+      <p>Voici un site web statique qui rassemble des exercices d'un TP Javascript.</p>
+      <a href="https://mouad-guarraz-dd102.netlify.app/" class="btn btn-outline-custom" target="_blank">Voir le projet</a>
+    </div>
+    <img src="./img/Rectangle 7.jpg" alt="Projet Javascript">
+  </div>
+
+  <div class="project-card">
+    <img src="./img/Rectangle 8.png" alt="Projet Salon de coiffure">
+    <div class="project-content">
+      <h3 style="font-family: 'Playfair Display', sans-serif;">Site web statique pour salon de coiffure</h3>
+      <p>Ce site web est dédié à un salon de coiffure à Rabat.</p>
+      <a href="https://onhair.ma" class="btn btn-outline-custom" target="_blank">Voir le projet</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about-section py-5">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <!-- Colonne gauche -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h2 class="about-title mb-4">À propos de moi</h2>
+        <p class="about-desc mb-4">
+          Passionné par le design et la technologie, je crée des expériences utilisateur à la fois belles et fonctionnelles. Grâce à une solide expérience en UI/UX et en développement web, j’aime transformer les idées en réalités digitales.
+        </p>
+        <a href="./img/CV.pdf" class="btn btn-warning rounded-pill px-4 py-2 fw-bold" target="_blank">Mon CV</a>
+      </div>
+      <!-- Colonne droite -->
+      <div class="col-lg-6 d-flex justify-content-center">
+        <div class="about-img-wrapper position-relative">
+          <div class="about-yellow-circle"></div>
+          <img src="./img/about-pp.png" alt="Photo de profil" class="about-img img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="container my-5">
+  <h2 class="section-title" style="font-family: 'Playfair Display', serif;">Contact</h2>
+  <form class="contact-form">
+    <div class="mb-3">
+      <label for="name" class="form-label">Nom</label>
+      <input type="text" class="form-control" id="name" placeholder="Votre nom">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">E-mail</label>
+      <input type="email" class="form-control" id="email" placeholder="Votre e-mail">
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Message</label>
+      <textarea class="form-control" id="message" rows="5" placeholder="Votre message"></textarea>
+    </div>
+    <div class="text-center">
+      <button type="submit" class="btn btn-custom">Envoyer</button>
+    </div>
+  </form>
+</section>
+
+<footer class="footer-section">
+  <div class="container">
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/mouad-guarraz-a46174360/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:mouadguarraz@gmail.com" aria-label="E-mail"><i class="far fa-envelope"></i></a>
+    </div>
+    <div class="footer-text">
+      © <span id="year"></span>. Tous droits réservés. Mouad Guarraz
+    </div>
+  </div>
+  <div class="yellow-wave"></div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
