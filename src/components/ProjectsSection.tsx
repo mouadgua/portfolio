@@ -18,7 +18,8 @@ const projects = [
     tags: ["Python", "Gemini API", "DeepSeek", "Next.js"],
     image: "https://vercel.com/mouads-projects-73e29ded",
     color: "from-blue-500/20 to-cyan-500/20",
-    github:"",
+    github:"https://vercel.com/mouads-projects-73e29ded",
+    link:""
   },
 ];
 
@@ -92,9 +93,10 @@ function TiltCard({ project }: { project: typeof projects[0] }) {
 
         {/* Links */}
         <div className="flex items-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-4 group-hover:translate-y-0">
-          <button className="flex items-center gap-2 text-sm font-semibold hover:text-blue-400 transition-colors">
-            <ExternalLink size={16} /> <a href={project.link} target="_blank" >Live Demo</a>
-          </button>
+              <button className="flex items-center gap-2 text-sm font-semibold hover:text-blue-400 transition-colors">
+              <ExternalLink size={16} /> <a href={project.link} target="_blank" >Live Demo</a>
+            </button>
+
           <button className="flex items-center gap-2 text-sm font-semibold hover:text-white/70 transition-colors">
             <Github size={16} /> <a href={project.github} target="_blank" >Live Demo</a>
           </button>

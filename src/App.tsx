@@ -41,7 +41,6 @@ export default function App() {
         <AboutSection />
         <ToolboxSection />
         <WorkflowSection />
-        <ProjectsSection />
         <ContactSection />
       </main>
     </div>
