@@ -95,7 +95,7 @@ export default function ContactSection() {
           >
             {/* replace src with your actual photo path or URL */}
             <img
-              src="../../assets/pp.png"
+              src="../src/assets/pp.png"
               alt="Mouad Guarraz"
               className="w-50 h-50 rounded-full mb-6 object-cover"
             />
